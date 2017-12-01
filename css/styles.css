@@ -1,5 +1,4 @@
 body {
-  max-width: 650px;
   margin: 0 auto;
   padding: 10px;
   background-color: floralwhite;
@@ -34,6 +33,11 @@ ol li code {
 
 .inline {
   display: inline-block;
+}
+
+.width-limit {
+  margin: 0 auto;
+  max-width: 650px;
 }
 
 #server-status {
@@ -71,9 +75,9 @@ ol li code {
 
 #server-log {
   padding: 10px;
-  margin: 10px;
+  margin: 10px auto;
   border: 1px solid darkgrey;
-  max-width: 1000px;
+  max-width: 1200px;
   max-height: 600px;
   overflow: scroll;
 }

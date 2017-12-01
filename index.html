@@ -7,85 +7,90 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <h1>Panic Shack - Minecraft Server</h1>
-        <img src="img/bridge.jpg" alt="Screenshot from the Minecraft server of a bridge over a lake in a jungle biome">
+        <div class="width-limit">
+            <h1>Panic Shack - Minecraft Server</h1>
+            <img src="img/bridge.jpg" alt="Screenshot from the Minecraft server of a bridge over a lake in a jungle biome">
 
-        <h2>Server Status</h2>
-        <div id="server-status-error">
-          Loading...
+            <h2>Server Status</h2>
+            <div id="server-status-error">
+              Loading...
+            </div>
+            <div id="server-status">
+              <div class="status">
+                <span class="label">Status:&nbsp;<span>
+                <span id="status-online">Online</span>
+                <span id="status-offline">Offline</span>
+              </div>
+              <div class="motd">
+                <span id="status-motd"></span>
+              </div>
+              <div class="players">
+                <span class="label">Players:&nbsp;</span>
+                <span id="status-players-now"></span>/<span id="status-players-max"></span>
+              </div>
+              <div class="connect-info">
+                <div class="inline">
+                  <span class="label">Host:&nbsp;</span>
+                  <span id="status-server-host" class="monospace">panic-shack.hallada.net</span>&nbsp;
+                </div>
+                <div class="inline">
+                  <span class="label">Port:&nbsp;</span>
+                  <span id="status-server-port" class="monospace">25565</span>
+                </div>
+              </div>
+              <div class="server">
+                <div class="inline">
+                  <span class="label">Version:&nbsp;</span>
+                  <span id="status-server-name" class="monospace"></span>&nbsp;
+                </div>
+                <div class="inline">
+                  <span class="label">Protocol:&nbsp;</span>
+                  <span id="status-server-protocol" class="monospace"></span>
+                </div>
+              </div>
+              <div class="last-online">
+                <span class="label">Last Online:&nbsp;</span>
+                <span id="status-last-online"></span>
+              </div>
+              <div class="last-updated">
+                <span class="label">Last Updated:&nbsp;</span>
+                <span id="status-last-updated"></span>
+              </div>
+            </div>
+
+            <h2>How to Connect</h2>
+            <ol>
+              <li>Launch Minecraft (version <span id="info-server-name">1.12.2</span>)</li>
+              <li>Go to "Multiplayer"</li>
+              <li>Click "Add Server"</li>
+              <li>Enter <code>Panic Shack</code> for the "Server Name"</li>
+              <li>Enter <code>panic-shack.hallada.net</code> for the "Server Address"</li>
+              <li>Click "Done"</li>
+              <li>You should now see the server in the list and be able to join it!</li>
+            </ol>
+
+            <h2>Server Map</h2>
+            <a href="map/" id="map-link">
+              <img src="img/map.jpg" alt="Screenshot from the in-browser map of the server centered on the lake and bridge">
+              View the server map
+            </a>
+            <p class="small-text">
+              Map is updated every day around 3 am EST.
+            </p>
+
+            <h2>Server Log</h2>
         </div>
-        <div id="server-status">
-          <div class="status">
-            <span class="label">Status:&nbsp;<span>
-            <span id="status-online">Online</span>
-            <span id="status-offline">Offline</span>
-          </div>
-          <div class="motd">
-            <span id="status-motd"></span>
-          </div>
-          <div class="players">
-            <span class="label">Players:&nbsp;</span>
-            <span id="status-players-now"></span>/<span id="status-players-max"></span>
-          </div>
-          <div class="connect-info">
-            <div class="inline">
-              <span class="label">Host:&nbsp;</span>
-              <span id="status-server-host" class="monospace">panic-shack.hallada.net</span>&nbsp;
-            </div>
-            <div class="inline">
-              <span class="label">Port:&nbsp;</span>
-              <span id="status-server-port" class="monospace">25565</span>
-            </div>
-          </div>
-          <div class="server">
-            <div class="inline">
-              <span class="label">Version:&nbsp;</span>
-              <span id="status-server-name" class="monospace"></span>&nbsp;
-            </div>
-            <div class="inline">
-              <span class="label">Protocol:&nbsp;</span>
-              <span id="status-server-protocol" class="monospace"></span>
-            </div>
-          </div>
-          <div class="last-online">
-            <span class="label">Last Online:&nbsp;</span>
-            <span id="status-last-online"></span>
-          </div>
-          <div class="last-updated">
-            <span class="label">Last Updated:&nbsp;</span>
-            <span id="status-last-updated"></span>
-          </div>
-        </div>
-
-        <h2>How to Connect</h2>
-        <ol>
-          <li>Launch Minecraft (version <span id="info-server-name">1.12.2</span>)</li>
-          <li>Go to "Multiplayer"</li>
-          <li>Click "Add Server"</li>
-          <li>Enter <code>Panic Shack</code> for the "Server Name"</li>
-          <li>Enter <code>panic-shack.hallada.net</code> for the "Server Address"</li>
-          <li>Click "Done"</li>
-          <li>You should now see the server in the list and be able to join it!</li>
-        </ol>
-
-        <h2>Server Map</h2>
-        <a href="map/" id="map-link">
-          <img src="img/map.jpg" alt="Screenshot from the in-browser map of the server centered on the lake and bridge">
-          View the server map
-        </a>
-        <p class="small-text">
-          Map is updated every day around 3 am EST.
-        </p>
-
-        <h2>Server Log</h2>
         <pre id="server-log"></pre>
-        <label>
-          <input type="checkbox" id="auto-scroll" checked>
-          Automatically scroll to bottom on log refresh
-        </label>
-        <p class="small-text">Updated every 10 seconds.</p>
 
-				<script src="https://mcapi.us/scripts/minecraft.js"></script>
+        <div class="width-limit">
+            <label>
+              <input type="checkbox" id="auto-scroll" checked>
+              Automatically scroll to bottom on log refresh
+            </label>
+            <p class="small-text">Updated every 10 seconds.</p>
+        </div>
+
+		<script src="https://mcapi.us/scripts/minecraft.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
         <script src="js/getStatus.js"></script>
         <script src="js/getLog.js"></script>
