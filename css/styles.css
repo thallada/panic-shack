@@ -81,3 +81,52 @@ ol li code {
   max-height: 600px;
   overflow: scroll;
 }
+
+#say-header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#say-form {
+  border: 1px dashed darkgray;
+  padding: 10px;
+}
+
+#say-form label {
+  width: 100%;
+}
+
+#say-form, #say-send {
+  margin-top: 5px;
+}
+
+#say-username, #say-text {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+#say-text {
+  width: 100%;
+}
+
+#say-dnf {
+  position: absolute;
+  left: -2000px;
+}
+
+#say-sending {
+  display: none;
+}
+
+#say-error {
+  color: darkred;
+}
+
+#say-success {
+  display: none;
+}
+
+#say-notice {
+  margin-top: 5px;
+  margin-bottom: 0;
+}

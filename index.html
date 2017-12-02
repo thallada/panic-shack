@@ -85,10 +85,30 @@
 
         <div class="width-limit">
             <label>
-              <input type="checkbox" id="auto-scroll" checked>
-              Automatically scroll to bottom on log refresh
+                <input type="checkbox" id="auto-scroll" checked>
+                Automatically scroll to bottom on log refresh
             </label>
             <p class="small-text">Updated every 10 seconds.</p>
+            <h3 id="say-header">Send Chat to Server</h3>
+            <form id="say-form">
+              <label class="inline">
+                  Name:
+                  <br>
+                  <input type="text" name="say-username" id="say-username">
+              </label>
+              <label class="inline">
+                  Say:
+                  <br>
+                  <input type="text" name="say-text" id="say-text">
+              </label>
+              <br>
+              <input type="text" name="email" id="say-dnf">
+              <input type="submit" name="say-send" id="say-send" class="inline" value="Send Chat">
+              <span id="say-sending" class="inline">Sending...</span>
+              <span id="say-success" class="inline">Sent!</span>
+              <span id="say-error" class="inline"></span>
+              <p id="say-notice" class="small-text">It may take a minute or two before the message appears in the above server log.</p>
+            </form>
         </div>
 
         <script src="https://mcapi.us/scripts/minecraft.js"></script>
@@ -96,5 +116,6 @@
         <script src="js/getStatus.js"></script>
         <script src="js/getLog.js"></script>
         <script src="js/getMapUpdate.js"></script>
+        <script src="js/sendChat.js"></script>
     </body>
 </html>
