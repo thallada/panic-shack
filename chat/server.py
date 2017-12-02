@@ -12,7 +12,7 @@ def setup_logging():
     app.logger.setLevel(logging.INFO)
 
 
-@app.route('/chat/', methods=['GET', 'POST'])
+@app.route('/chat/', methods=['POST'])
 def send_chat():
     if request.method == 'POST':
         if request.form.get('email', None):
@@ -26,9 +26,6 @@ def send_chat():
             subprocess.call(['/usr/bin/screen', '-S', 'mc-panic-shack', '-p', '0', '-X', 'stuff',
                              '/say {}\015'.format(request.form['say-text'])])
         return 'Sending chat: ' + request.form.get('say-username', '') + ': ' + request.form['say-text']
-    else:
-        app.logger.info('Hello, world!')
-        return 'Hello, world!'
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port="8888")
