@@ -1,1 +1,12 @@
-/etc/nginx/sites-available/panic-shack
+server {
+	listen 80;
+	listen [::]:80;
+
+	root /var/www/panic-shack;
+
+	server_name panic-shack.hallada.net;
+
+    location / {
+        return 301 https://panic-shack.hallada.net$request_uri;
+    }
+}
