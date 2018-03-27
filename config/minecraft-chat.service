@@ -7,7 +7,7 @@ User=thallada
 Group=www-data
 WorkingDirectory=/var/www/panic-shack/chat
 Environment="PATH=/home/thallada/.virtualenvs/minecraft-chat/bin"
-ExecStart=/home/thallada/.virtualenvs/minecraft-chat/bin/gunicorn --workers 3 --bind unix:minecraft-chat.sock -m 007 server:app --log-file /srv/minecraft-panic-shack/gunicorn.log
+ExecStart=/home/thallada/.virtualenvs/minecraft-chat/bin/gunicorn --workers 1 --bind unix:minecraft-chat.sock -m 007 server:app --log-file /srv/minecraft-panic-shack/gunicorn.log
 
 [Install]
 WantedBy=multi-user.target
