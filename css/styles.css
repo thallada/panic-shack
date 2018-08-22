@@ -130,3 +130,18 @@ ol li code {
   margin-top: 5px;
   margin-bottom: 0;
 }
+
+.maintenance-notice {
+  padding: 20px;
+  background: darkred;
+  color: white;
+}
+
+.maintenance-notice h3 {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.maintenance-notice h3,span {
+  display: inline-block;
+}
