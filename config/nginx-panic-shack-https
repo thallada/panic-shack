@@ -22,6 +22,11 @@ server {
         try_files $uri $uri/ $uri.php?$args =404;
     }
 
+    location /old-worlds {
+        autoindex on;
+        try_files $uri $uri/ $uri.php?$args =404;
+    }
+
     location /chat {
         include uwsgi_params;
         proxy_set_header X-Forwarded-Host $host:$server_port; proxy_set_header X-Forwarded-Server $host;
