@@ -1,7 +1,7 @@
-worlds["Panic Shack"] = "/srv/minecraft-panic-shack/world"
+worlds["Death Pit"] = "/srv/minecraft-panic-shack/world"
 
 renders["normalrender"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "North",
     "rendermode": smooth_lighting,
     "dimension": "overworld",
@@ -9,7 +9,7 @@ renders["normalrender"] = {
 }
 
 renders["normalrendersouth"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "South",
     "rendermode": smooth_lighting,
     "dimension": "overworld",
@@ -17,7 +17,7 @@ renders["normalrendersouth"] = {
 }
 
 renders["normalrenderwest"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "West",
     "rendermode": smooth_lighting,
     "dimension": "overworld",
@@ -25,7 +25,7 @@ renders["normalrenderwest"] = {
 }
 
 renders["normalrendereast"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "East",
     "rendermode": smooth_lighting,
     "dimension": "overworld",
@@ -33,7 +33,7 @@ renders["normalrendereast"] = {
 }
 
 renders["nightrender"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Night North",
     "rendermode": smooth_night,
     "dimension": "overworld",
@@ -41,7 +41,7 @@ renders["nightrender"] = {
 }
 
 renders["nightrendersouth"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Night South",
     "rendermode": smooth_night,
     "dimension": "overworld",
@@ -49,7 +49,7 @@ renders["nightrendersouth"] = {
 }
 
 renders["nightrenderwest"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Night West",
     "rendermode": smooth_night,
     "dimension": "overworld",
@@ -57,7 +57,7 @@ renders["nightrenderwest"] = {
 }
 
 renders["nightrendereast"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Night East",
     "rendermode": smooth_night,
     "dimension": "overworld",
@@ -65,7 +65,7 @@ renders["nightrendereast"] = {
 }
 
 renders["caverender"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Cave North",
     "rendermode": cave,
     "dimension": "overworld",
@@ -73,7 +73,7 @@ renders["caverender"] = {
 }
 
 renders["caverendersouth"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Cave South",
     "rendermode": cave,
     "dimension": "overworld",
@@ -81,7 +81,7 @@ renders["caverendersouth"] = {
 }
 
 renders["caverenderwest"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Cave West",
     "rendermode": cave,
     "dimension": "overworld",
@@ -89,7 +89,7 @@ renders["caverenderwest"] = {
 }
 
 renders["caverendereast"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Cave East",
     "rendermode": cave,
     "dimension": "overworld",
@@ -97,7 +97,7 @@ renders["caverendereast"] = {
 }
 
 renders["netherrender"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Nether North",
     "rendermode": nether,
     "dimension": "nether",
@@ -105,7 +105,7 @@ renders["netherrender"] = {
 }
 
 renders["netherrendersouth"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Nether South",
     "rendermode": nether,
     "dimension": "nether",
@@ -113,14 +113,14 @@ renders["netherrendersouth"] = {
 }
 
 renders["netherrenderwest"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Nether West",
     "rendermode": nether,
     "dimension": "nether",
     "northdirection": "upper-right",
 }
 renders["netherrendereast"] = {
-    "world": "Panic Shack",
+    "world": "Death Pit",
     "title": "Nether East",
     "rendermode": nether,
     "dimension": "nether",
